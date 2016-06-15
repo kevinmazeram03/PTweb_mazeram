@@ -1,0 +1,216 @@
+/*GRILLE sans goutière*/
+.row:after{
+    display:block;
+    content:"";
+    clear:both;
+}
+
+.col1, .col2,.col3,.col4,.col5,.col6{
+    float:left;
+   
+    
+}
+
+.col1{
+    width:calc(100% / 6);
+}
+
+.col2{
+    width:calc(100% / 6 * 2);
+}
+
+.col3{
+    width:calc(100% / 6 * 3);
+}
+
+.col4{
+    width:calc(100% / 6 * 4);
+}
+
+.col5{
+    width:calc(100% / 6 * 5);
+}
+
+.col6{
+    width:calc(100%);
+}
+
+
+/*----------------------CONTENU---------------------------------*/
+
+.contenu{
+        padding: 0 1em 1em 0;
+
+}
+
+/*----------------------800px---------------------------------*/
+
+@media (min-width:421px) and (max-width:800px){
+ 
+    
+.col11{
+    width:calc(100% / 6);
+}
+
+.col12{
+    width:calc(100% / 6 * 2);
+}
+
+.col13{
+    width:calc(100% / 6 * 3);
+}
+
+.col14{
+    width:calc(100% / 6 * 4)
+}
+
+.col15{
+    width:calc(100% / 6 * 5);
+}
+
+.col16{
+    width:calc(100%);
+}
+
+}
+/*----------------------420px---------------------------------*/
+@media (max-width:420px){
+
+.col21{
+    width:calc(100% / 6);
+}
+
+.col22{
+    width:calc(100% / 6 * 2);
+}
+
+.col23{
+    width:calc(100% / 6 * 3);
+}
+
+.col24{
+    width:calc(100% / 6 * 4)
+}
+
+.col25{
+    width:calc(100% / 6 * 5);
+}
+
+.col26{
+    width:calc(100%);
+}
+
+
+.col1, .col2,.col3,.col4,.col5,.col6{
+    height: 30px;
+    
+}
+
+}
+
+
+/*--------------------------------------------------GRILLE AVEC GOUTIERE---------------------------------------------*/
+.gcol1, .gcol2,.gcol3,.gcol4,.gcol5,.gcol6{
+    float:left;
+    height: 20px;
+    margin: 1em 0 0 1em;
+    
+    
+}
+
+.gcol1{
+    width:calc(100% / 6 - 1em);
+}
+
+.gcol2{
+    width:calc(100% / 6 * 2  - 1em);
+}
+
+.gcol3{
+    width:calc(100% / 6 * 3  - 1em);
+}
+
+.gcol4{
+    width:calc(100% / 6 * 4  - 1em);
+}
+
+.gcol5{
+    width:calc(100% / 6 * 5  - 1em);
+}
+
+.gcol6{
+    width:calc(100%  - 1em);
+}
+
+
+/*----------------------CONTENU---------------------------------*/
+
+.contenu{
+        padding: 0 1em 1em 0;
+
+}
+
+/*----------------------800px---------------------------------*/
+
+@media (min-width:421px) and (max-width:800px){
+ 
+    
+.gcol11{
+    width:calc(100% / 6  - 1em);
+}
+
+.gcol12{
+    width:calc(100% / 6 * 2  - 1em);
+}
+
+.gcol13{
+    width:calc(100% / 6 * 3  - 1em);
+}
+
+.gcol14{
+    width:calc(100% / 6 * 4  - 1em)
+}
+
+.gcol15{
+    width:calc(100% / 6 * 5  - 1em);
+}
+
+.gcol16{
+    width:calc(100%  - 1em);
+}
+
+}
+/*----------------------420px---------------------------------*/
+@media (max-width:420px){
+
+.gcol21{
+    width:calc(100% / 6  - 1em);
+}
+
+.gcol22{
+    width:calc(100% / 6 * 2  - 1em);
+}
+
+.gcol23{
+    width:calc(100% / 6 * 3  - 1em);
+}
+
+.gcol24{
+    width:calc(100% / 6 * 4  - 1em)
+}
+
+.gcol25{
+    width:calc(100% / 6 * 5  - 1em);
+}
+
+.gcol26{
+    width:calc(100%  - 1em);
+}
+
+
+.gcol1, .gcol2,.gcol3,.gcol4,.gcol5,.gcol6{
+    height: 30px;
+    
+}
+
+}
