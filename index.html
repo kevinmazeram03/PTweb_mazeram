@@ -13,19 +13,20 @@
 
 <body>
     <div class="wrapper">
+       <header id="accueil">
         <div class="description">
             <div class="logo"><img src="img/logo.png" alt="logo"></div>
             <h2>Kévin MAZERAM</h2>
             <hr>
             <h1>Intégrateur web</h1>
-            <h4>Commencer la visite<i class="fa fa-angle-double-down" aria-hidden="true"></i></h4>
+            <h4><a href="#propos">Commencer la visite</a><i class="fa fa-angle-double-down" aria-hidden="true"></i></h4>
             
             <nav id="menu">
                 <h2>Kévin MAZERAM</h2>
                 <ul>
-                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#accueil">Accueil</a></li>
                     <li><a href="#propos">A propos</a></li>
-                    <li><a href="#">Qualifications</a></li>
+                    <li><a href="#qualification">Qualifications</a></li>
                     <li><a href="#">Experiences</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -43,16 +44,55 @@
                 </div>
             </div>	
         </div>
+        </header>
         <main>
            <!--**************************A PROPOS***********************************-->
             <section id="propos">
+                <!--**************************DE MOI***********************************-->
                 <div class="row">
-                    <h2 class="col1">Moi</h2>
-                    <img src="img/logo.png" alt="profil" class="col2">
-                    <p class="col3">Je m’appelle Kevin MAZERAM, j’ai 19 ans et je suis actuellement en première année de DUT MMI (Métiers du Mutlimédia et de l’Internet)Depuit le début de cette formation j’ai découvert une réel passion pour le domaine du web. Plus particulièrement pour l’intégration mais également pour le graphisme et le dévellopement.</p>
+                    <h2 class="col1 moi">Moi</h2>
+                    <div class="col1 profil"> <img src="./img/logo.png" alt="profil"></div>
+                    <div class="col4 presentation"><p>Je m’appelle Kevin MAZERAM, j’ai 19 ans et je suis actuellement en première année de DUT MMI (Métiers du Mutlimédia et de l’Internet)Depuit le début de cette formation j’ai découvert une réel passion pour le domaine du web. Plus particulièrement pour l’intégration mais également pour le graphisme et le dévellopement.</p></div>
+                </div>
+                <!--**************************DE MES SERVICES***********************************-->
+                <div class="row">
+                     <h2 class="col1 services">Mes services</h2> 
+                     <div class="col5">
+                       
+                        <div class="thumb">
+	                    <a href="#">
+	                        <img src="./img/int%C3%A9gration_services.png">
+		                    <span>Intégration</span>
+                        </a>
+                        </div>
+                        <div class="thumb trumb2">
+	                    <a href="#">
+	                        <img src="./img/graphisme_services.png">
+		                    <span>Graphisme</span>
+                        </a>
+                        </div>
+                        <div class="thumb trumb3">
+	                    <a href="#">
+	                        <img src="./img/montage_services.png">
+		                    <span>Audiovisuel</span>
+                        </a>
+                        </div>
+                         
+                     </div>  
+                </div>
+                <div class="row">
+                    <div class="col5 servicesexpli">
+                        <p>Création de site internet en HTML5 et CSS3 ou également à l’aide de CMS (wordpress)</p>
+                        <p>Conception de maquette de site web, d’affiche, de logo. A l’aide d’Illustrator et Photoshop</p>
+                        <p>Composition de montage vidéo a l’aide du logiciel Premiere Pro</p>
+                    </div>
                 </div>
             </section>
-            <section></section>
+            <section id="qualification">
+                <div class="titre">
+                    <h1>qualifications</h1>
+                </div>
+            </section>
             <section></section>
             <section></section>
             <section></section>

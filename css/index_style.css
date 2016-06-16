@@ -18,13 +18,13 @@ font-family: Century Gothic;
 .wrapper {  
 }
 .col1, .col2,.col3,.col4,.col5,.col6{
-    background-color: red;
+    
 }
 .gcol1, .gcol2,.gcol3,.gcol4,.gcol5,.gcol6{
-    background-color: orangered;
+    
 }
 
-/*ACCUEIL*/
+/*------------------ACCUEIL------------------*/
 .slider {
 	width: 100%;
 	margin: auto;
@@ -54,7 +54,7 @@ font-family: Century Gothic;
     z-index: 1;
     position: absolute;
     width: 100%;
-    margin-top: 20vh;
+    margin-top: 10vh;
     height: 80vh;
     
 
@@ -91,7 +91,9 @@ font-family: Century Gothic;
     text-shadow: 2px 2px 4px black;
     margin-left: 10px;
 }
-
+.description  h4 a{
+    color: white;
+}
 .description  h4{
     font-weight: 400;
     font-size: 1.1em;
@@ -104,7 +106,7 @@ font-family: Century Gothic;
     border: solid white 2px;
     margin: 0 auto;
     border-radius: 5px;
-    margin-top: 80px;
+    margin-top: 40px;
     margin-bottom: 50px;
     
 }
@@ -169,6 +171,154 @@ nav li:hover{
 }
 
 
+/*------------------PROPOS------------------*/
+#propos{
+    padding-top: 10vh;
+    height: 100vh;
+}
+
+#propos .moi {
+    letter-spacing: 5px;
+    font-size: 35px;
+    -ms-transform: rotate(270deg); /* IE 9 */
+    -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
+    transform: rotate(270deg);
+}
+#propos .profil img{
+    background-color: black;
+    margin-left: 10%;
+    width: 80%;
+}
+#propos .presentation p{
+    letter-spacing: 1px;
+    padding: 30px 20% 0 50px;
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+#propos .services {
+    
+    margin-top: 150px;
+    
+    font-size: 35px;
+    -ms-transform: rotate(270deg); /* IE 9 */
+    -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
+    transform: rotate(270deg);
+}
+
+/*IMAGE 3D*/        
+
+        /*Image Background + taille des image*/
+        .thumb {
+            width: 30vh; height: 30vh; margin: 60px 60px 0 60px ;
+            perspective: 1000px;
+            float: left;
+        }
+        .thumb img{width: 100%;
+        height: 100%;}
+
+
+
+        .thumb a {
+            display: block; width: 100%; height: 100%;
+            /*double layered BG for lighting effect*/
+            background-image: url(../img/int%C3%A9gration_services.png),
+                linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+
+            /*disabling the translucent black bg on the main image*/
+            background-size: 0, cover;
+            /*3d space for children*/
+            transform-style: preserve-3d;
+            transition: all 0.5s;
+        }
+
+
+
+        .trumb2 a{
+            background-image: url(../img/graphisme_services.png),
+                linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+                }
+        .trumb3 a{
+            background-image: url(../img/montage_services.png),
+                linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+                }
+
+
+
+        .thumb:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+        /*bottom surface */
+        .thumb a:after {
+            /*36px high element positioned at the bottom of the image*/
+            content: ''; position: absolute; left: 0; bottom: 0; 
+            width: 100%; height: 36px;
+            /*inherit the main BG*/
+            background: inherit; background-size: cover, cover;
+            /*draw the BG bottom up*/
+            background-position: bottom;
+            /*rotate the surface 90deg on the bottom axis*/
+            transform: rotateX(90deg); transform-origin: bottom;
+        }
+        /*label style*/
+        .thumb a span {
+            color: white; text-transform: uppercase;
+            position: absolute; top: 100%; left: 0; width: 100%;
+            line-height: 36px; text-align: center;
+            /*the rotation is a bit less than the bottom surface to avoid flickering*/
+            transform: rotateX(-89.99deg); transform-origin: top;
+            z-index: 1;
+        }
+        /*shadow*/
+        .thumb a:before {
+            content: ''; position: absolute; top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.5); 
+            box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+            transition: all 0.5s; 
+            /*by default the shadow will be almost flat, very transparent, scaled down, an*/
+            opacity: 0.15;
+            transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+            transform-origin: bottom;
+        }
+        .thumb:hover a:before {
+            opacity: 1;
+            /*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+            box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+            /*pushing the shadow down and scaling it down to size*/
+            transform: rotateX(0) translateZ(-60px) scale(0.85);
+        }
+#propos .servicesexpli{
+    float: right;
+}
+#propos .servicesexpli p{
+    width: 30vh; 
+    margin: 60px ;
+    float: left;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+}
+
+/*------------------QUALIFICATIONS------------------*/
+
+#qualification .titre{
+    height: 300px;
+    background: url("../img/coding-924920_1920.jpg") no-repeat top fixed;
+    background-size: cover;
+    text-align: center;
+}
+#qualification .titre h1{
+    line-height: 300px;
+    text-transform: uppercase;
+    font-size: 4em;
+    font-family: Source Sans Pro;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    width: 500px;
+    margin: 0 auto;
+    border-bottom: solid white 1px;
+    height: 200px;
+
+}
 /*TABLETTE*/
 
 
