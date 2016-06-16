@@ -174,7 +174,7 @@ nav li:hover{
 /*------------------PROPOS------------------*/
 #propos{
     padding-top: 10vh;
-    height: 100vh;
+    height:95vh;
 }
 
 #propos .moi {
@@ -307,7 +307,7 @@ nav li:hover{
     text-align: center;
 }
 #qualification .titre h1{
-    line-height: 300px;
+    line-height: 200px;
     text-transform: uppercase;
     font-size: 4em;
     font-family: Source Sans Pro;
@@ -318,6 +318,44 @@ nav li:hover{
     border-bottom: solid white 1px;
     height: 200px;
 
+}
+
+#qualification .formation {
+    margin-top: 160px;
+    font-size: 35px;
+    -ms-transform: rotate(270deg); /* IE 9 */
+    -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
+    transform: rotate(270deg);
+}
+#qualification .formationn{
+    height: 400px;
+}
+#qualification .annees:nth-child(odd ) {
+    background-color: #f0502a;
+}
+
+#qualification .annees{
+    border : solid black 3px;
+    z-index: 100;
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-left: 15%;
+    background-color: #f48028;
+    border-radius: 100px;
+    text-align: center;
+    line-height: 150px;
+    color: white;
+    font-size: 1.5em;
+    margin-top: 120px
+    
+}
+#qualification .ligne{
+    position: absolute;
+    z-index: -1;
+    height: 3px;
+    background-color: black;
+    margin-top: 195px;
 }
 /*TABLETTE*/
 
