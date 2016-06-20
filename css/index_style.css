@@ -119,14 +119,20 @@ font-family: Century Gothic;
     -webkit-transition: all .3s ease-in-out;
 }
 #menu {
-   
+    
     width: 100%;
     height: 60px;
 background-color: rgba(0, 0, 0, 0.5);
 }
 #menu h2{
+    display: block;;
     width: 400px;
     float: left;
+    color: white;
+    font-size: 2.4em;
+    text-align: center; 
+    padding: 10px;
+    text-shadow: 2px 2px 4px black;
 }
 #menu li {
     
@@ -134,14 +140,13 @@ background-color: rgba(0, 0, 0, 0.5);
     height: 55px;
     padding:0 10px; 
     text-align: center;
-    line-height: 50px;
+    line-height: 58px;
     text-transform: uppercase;
     font-size: 0.9em;
     
 }
 #menu ul {
-    font-size: 1.4em;
-    margin-top: ;
+    font-size: 1.2em;
     padding-right: 50px;
     display: inline-block;
     float: right;
@@ -170,22 +175,25 @@ nav li:hover{
     
 }
 
+.positionmenu{
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    bottom: 20px;
+}
+
 
 /*------------------PROPOS------------------*/
 #propos{
-    padding-top: 10vh;
-    height:90vh;
+    padding-top: 15vh;
+    
 }
 
-@media (max-height:777px){
-#propos{
-    padding-top: 10vh;
-    height:100vh;
-}
-}
+
 
 #propos .moi {
-    letter-spacing: 5px;
+     margin-top: 100px;
+    letter-spacing: 2px;
     font-size: 35px;
     -ms-transform: rotate(270deg); /* IE 9 */
     -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
@@ -194,11 +202,11 @@ nav li:hover{
 #propos .profil img{
     background-color: black;
     margin-left: 10%;
-    width: 80%;
+    width: 95%;
 }
 #propos .presentation p{
     letter-spacing: 1px;
-    padding: 20px 20% 0 50px;
+    padding: 20px 10% 0 50px;
     text-align: justify;
     font-size: 1.2em;
 }
@@ -225,6 +233,9 @@ nav li:hover{
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
 }
+#propos .serv{
+    margin-top: 50px;
+}
 
 #propos .services {
     
@@ -240,7 +251,7 @@ nav li:hover{
 
         /*Image Background + taille des image*/
         .thumb {
-            width: 30vh; height: 30vh; margin: 60px 60px 0 60px ;
+            width: 20%; height: 25vh; margin: 60px 60px 0 50px ;
             perspective: 1000px;
             float: left;
         }
@@ -322,7 +333,7 @@ nav li:hover{
     padding-bottom: 20px;
 }
 #propos .servicesexpli p{
-    width: 30vh; 
+    width: 20%; 
     margin: 60px ;
     float: left;
     text-align: center;
@@ -355,6 +366,7 @@ nav li:hover{
 }
 
 #qualification .formation {
+    text-align: center;
     margin-top: 160px;
     font-size: 30px;
     -ms-transform: rotate(270deg); /* IE 9 */
@@ -391,6 +403,17 @@ nav li:hover{
     background-color: black;
     margin-top: 195px;
 }
+#qualification .descriforma{
+    height: 1px;
+}
+#qualification .description2 p{
+    text-align: center;
+    width: 200px;
+    float: left;
+    margin-left: 12%;
+    padding-top: 20px;
+    letter-spacing: 1px;
+}
 #qualification .competences {
     
     margin-top: 160px;
@@ -398,6 +421,147 @@ nav li:hover{
     -ms-transform: rotate(270deg); /* IE 9 */
     -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
     transform: rotate(270deg);
+}
+
+/*Barre de compétence avec progression*/
+            #container { text-align: center; margin: 20px; }
+            #container h2 { color: #CCC; }
+            
+
+            .bar-main-container {
+                margin: 10px;
+                background-color: #f0502a; 
+              width: 300px;
+              height: 50px;
+              -webkit-border-radius: 4px;
+              -moz-border-radius: 4px;
+              border-radius: 4px;
+              font-family: sans-serif;
+              font-weight: normal;
+              font-size: 0.8em;
+              color: #FFF;
+
+            }
+
+            .wrap { padding: 8px; }
+
+            .bar-percentage {
+              float: left;
+              background: rgba(0,0,0,0.13);
+              -webkit-border-radius: 4px;
+              -moz-border-radius: 4px;
+              border-radius: 4px;
+              padding: 9px 0px;
+              width: 18%;
+              height: 16px;
+
+            }
+
+            .bar-container {
+              float: right;
+              -webkit-border-radius: 10px;
+              -moz-border-radius: 10px;
+              border-radius: 4px;
+              height: 34px;
+              background: rgba(0,0,0,0.13);
+              width: 80%;
+              margin: 0px 0px;
+              overflow: hidden;
+            }
+
+            .bar {
+                padding-left: 3px;
+                text-align: left;
+                font-size: 1.2em;
+                text-transform: uppercase;
+                line-height: 32px;
+              float: left;
+              background: #f48028;
+              height: 100%;
+              -webkit-border-radius: 10px 0px 0px 10px;
+              -moz-border-radius: 10px 0px 0px 10px;
+              border-radius: 4px 0px 0px 4px;
+              -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+              filter: alpha(opacity=100);
+              -moz-opacity: 1;
+              -khtml-opacity: 1;
+              opacity: 1;
+            }
+#qualification .entre{
+    height: 1px;    /*présent pour mettre un espace entre les compétence */
+}
+#qualification h3{
+    font-weight: 900;
+    font-size: 1.2em;
+}
+.integration1, .devellopement1{
+    padding-bottom: 9px;
+} 
+.graphisme1{
+    padding-bottom: 4px;
+}
+.bureautique .bar{
+    font-size: 0.85em;
+}
+
+/*------------------EXPERIENCES------------------*/
+
+#experience .titre{
+    height: 300px;
+    background: url("../img/computer-768696_1920.jpg") no-repeat top fixed;
+    background-size: cover;
+    text-align: center;
+}
+#experience .titre h1{
+    line-height: 220px;
+    text-transform: uppercase;
+    font-size: 4em;
+    font-family: Source Sans Pro;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    width: 500px;
+    margin: 0 auto;
+    border-bottom: solid white 1px;
+    height: 200px;
+   
+
+}
+#experience img{
+    padding: 70px 14% 0 14%;
+    width: 300px;
+    height: 190px;
+}
+#experience .descrip{
+    text-align: center;
+     width: 300px;
+    padding: 30px 14% 40px 14%;
+}
+#experience .date{
+    text-align: center;
+    width: 300px;
+    padding: 20px 14% 0 14%;
+    font-style: italic;
+}
+
+/*------------------PORTFOLIO------------------*/
+
+#portfolio .titre{
+    height: 300px;
+    background: url("../img/back_porfolio.jpg") no-repeat top fixed;
+    background-size: cover;
+    text-align: center;
+}
+#portfolio .titre h1{
+    line-height: 220px;
+    text-transform: uppercase;
+    font-size: 4em;
+    font-family: Source Sans Pro;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    width: 500px;
+    margin: 0 auto;
+    border-bottom: solid white 1px;
+    height: 200px;
 }
 
 /*TABLETTE*/
@@ -411,98 +575,3 @@ nav li:hover{
 
 
 
-#container { text-align: center; margin: 20px; }
-#container h2 { color: #CCC; }
-a { text-decoration: none; color: #EC5C93; }
-
-.bar-main-container {
-    position : absolute;
-  margin: 10px auto;
-  width: 300px;
-  height: 50px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  font-family: sans-serif;
-  font-weight: normal;
-  font-size: 0.8em;
-  color: #FFF;
-    -ms-transform: rotate(270deg); /* IE 9 */
-    -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
-    transform: rotate(270deg);
-    background-color: #f0502a;
-}
-
-.wrap { padding: 8px; }
-
-.bar-percentage {
-  float: left;
-  background: rgba(0,0,0,0.13);
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  padding: 9px 0px;
-  width: 18%;
-  height: 16px;
-    -ms-transform: rotate(270deg); /* IE 9 */
-    -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
-    transform: rotate(90deg);
-}
-
-.bar-container {
-  float: right;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 4px;
-  height: 34px;
-  background: rgba(0,0,0,0.13);
-  width: 82%;
-  margin: 0px 0px;
-  overflow: hidden;
-}
-
-.bar {
-  float: left;
-  background: #f48028;
-  height: 100%;
-  -webkit-border-radius: 10px 0px 0px 10px;
-  -moz-border-radius: 10px 0px 0px 10px;
-  border-radius: 4px 0px 0px 4px;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  filter: alpha(opacity=100);
-  -moz-opacity: 1;
-  -khtml-opacity: 1;
-  opacity: 1;
-}
-.integration1 {
-    float:left; 
-}
-.integration2 {
-    margin-left: 70px; 
-}
-.graphisme1{
-    margin-left: 200px;
-}
-.graphisme2{
-    margin-left: 270px;
-}
-.devellopement1{
-    margin-left: 400px;
-}
-.devellopement2{
-    margin-left: 470px;
-}
-.wordpress{
-    margin-left: 600px;
-}
-.bureautique{
-    margin-left: 740px;
-}
-
-
-/* COLORS */
-.azure   { background: #38B1CC; }
-.emerald { background: #2CB299; }
-.violet  { background: #8E5D9F; }
-.yellow  { background: #EFC32F; }
-.red     { background: #E44C41; }

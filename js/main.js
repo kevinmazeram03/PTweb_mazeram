@@ -38,6 +38,7 @@ $('a[href^="#"]').click(function(){
 });
 
 
+/*Barre de compétence avec progression*/
 
 $('.bar-percentage[data-percentage]').each(function () {
   var progress = $(this);
