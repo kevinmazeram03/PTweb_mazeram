@@ -58,3 +58,48 @@ $('.bar-percentage[data-percentage]').each(function () {
     }
   });
 });
+
+
+/*Menu de la rubrique porfolio*/
+
+
+
+
+jQuery(document).ready(function()
+{
+   // On cache la zone de texte
+   jQuery('#graphisme').hide();
+    jQuery('#integration').hide();
+    jQuery('#video').hide();
+  
+    // toggle() lorsque le lien avec l'ID #toggler est cliqué
+   jQuery('a#graphismes').click(function()
+  {
+      jQuery('#integration').hide();
+       jQuery('#video').hide();
+       
+      jQuery('#graphisme').toggle(800);
+      return false;
+   });
+    
+    jQuery('a#integrations').click(function()
+  {
+        jQuery('#graphisme').hide();
+       
+        jQuery('#video').hide();
+      jQuery('#integration').toggle(800);
+      return false;
+   });
+    
+    jQuery('a#videos').click(function()
+  {
+        jQuery('#graphisme').hide();
+        jQuery('#integration').hide();
+        
+      jQuery('#video').toggle(800);
+      return false;
+   });
+     
+});
+
+
