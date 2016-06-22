@@ -194,10 +194,11 @@ background-color: rgba(0, 0, 0, 0.5);
 }
 
 
+
 /*------------------PROPOS------------------*/
 #propos{
     padding-top: 15vh;
-    
+    min-height: 85vh;
 }
 
 
@@ -213,7 +214,8 @@ background-color: rgba(0, 0, 0, 0.5);
 #propos .profil img{
     background-color: black;
     margin-left: 10%;
-    width: 95%;
+    width: 100%;
+    border-radius: 100%;
 }
 #propos .presentation p{
     letter-spacing: 1px;
@@ -321,6 +323,7 @@ background-color: rgba(0, 0, 0, 0.5);
             z-index: 1;
         }
         /*shadow*/
+
         .thumb a:before {
             content: ''; position: absolute; top: 0; left: 0;
             width: 100%; height: 100%;
@@ -345,7 +348,7 @@ background-color: rgba(0, 0, 0, 0.5);
 }
 #propos .servicesexpli p{
     width: 20%; 
-    margin: 60px ;
+    margin: 60px 60px 0 50px ;
     float: left;
     text-align: center;
     letter-spacing: 1px;
@@ -365,7 +368,7 @@ background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
 }
 #qualification .titre h1{
-    line-height: 220px;
+    line-height: 300px;
     text-transform: uppercase;
     font-size: 4em;
     font-family: Source Sans Pro;
@@ -438,14 +441,14 @@ background-color: rgba(0, 0, 0, 0.5);
 }
 
 /*Barre de compétence avec progression*/
-            #container { text-align: center; margin: 20px; }
+            #container { text-align: center; margin: 20px; padding: 0 0 0 8%}
             #container h2 { color: #CCC; }
             
 
             .bar-main-container {
                 margin: 10px;
                 background-color: #f0502a; 
-              width: 300px;
+              width: 350px;
               height: 50px;
               -webkit-border-radius: 4px;
               -moz-border-radius: 4px;
@@ -468,6 +471,7 @@ background-color: rgba(0, 0, 0, 0.5);
               padding: 9px 0px;
               width: 18%;
               height: 16px;
+              line-height: 16px;
 
             }
 
@@ -509,10 +513,10 @@ background-color: rgba(0, 0, 0, 0.5);
     font-size: 1.2em;
 }
 .integration1, .devellopement1{
-    padding-bottom: 9px;
+    padding-bottom: px;
 } 
 .graphisme1{
-    padding-bottom: 4px;
+    padding-bottom: px;
 }
 .bureautique .bar{
     font-size: 0.85em;
@@ -527,7 +531,7 @@ background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
 }
 #experience .titre h1{
-    line-height: 220px;
+    line-height: 300px;
     text-transform: uppercase;
     font-size: 4em;
     font-family: Source Sans Pro;
@@ -570,7 +574,7 @@ background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
 }
 #portfolio .titre h1{
-    line-height: 220px;
+    line-height: 300px;
     text-transform: uppercase;
     font-size: 4em;
     font-family: Source Sans Pro;
@@ -582,7 +586,8 @@ background-color: rgba(0, 0, 0, 0.5);
     height: 200px;
 }
 #portfolio{
-    height: 100vh;
+    min-height: 100vh;
+    padding-bottom: 50px;
     
 }
 
@@ -959,15 +964,28 @@ background-color: rgba(0, 0, 0, 0.5);
 
 /*------------------CONTACT------------------*/
 #contact{
-    background-image: url(../img/mailbox-84526_1280.jpg);
+    background: url(../img/mailbox-84526_1280.jpg) no-repeat top fixed;
     background-size: cover;
-    height: 100vh;
+    min-height:  height: 100.1vh;
+    padding-bottom: 100px;
     
 }
-
+#contact .titre h1{
+    padding-top: 60px;
+    line-height: 100px;
+    text-transform: uppercase;
+    font-size: 4em;
+    font-family: Source Sans Pro;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    width: 500px;
+    margin: 0 auto;
+    border-bottom: solid white 1px;
+    text-align: center;
+}
 
 #contact form{
-    padding: 30% 0 50px 0;
+    padding: 20% 0 50px 0;
     text-align: center;
     
 }
