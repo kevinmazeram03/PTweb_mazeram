@@ -147,7 +147,7 @@
                                       </div>
 
 
-                                    <h3>Develloppement</h3>
+                                    <h3>Développement</h3>
                                   <div class="devellopement1">
                                   <div id="bar-1" class="bar-main-container">
                                     <div class="wrap">
@@ -235,7 +235,7 @@
                     <h1>Expérience</h1>
                 </div>
                 <div class="row">
-                    <div class="col2"><img src="./img/mephisto.jpg" alt="Usine chaussure"> </div>
+                    <div class="col2"><img src="./img/mephisto.jpg" alt="Usine chaussure" > </div>
                     <div class="col2"><img src="./img/pompier.jpg" alt="Usine chaussure"> </div>
                     <div class="col2"><img src="./img/html.jpg" alt="Usine chaussure"> </div>
                 </div>
@@ -261,15 +261,20 @@
 
             <section id="portfolio">
                 <div class="titre">
-                    <h1>Expérience</h1>
-                        <a id="integrations">Intégration</a>
-                        <a id="graphismes">Graphisme</a>
-                        <a id="videos">Videos</a>
+                    <h1>Portfolio</h1>
+                    <nav>
+                       <ul>
+                            <li><a class="touss" href="#portfolio">Tous</a></li>
+                            <li><a class="integrations" href="#portfolio">Intégration</a></li>
+                            <li><a class="graphismes" href="#portfolio">Graphisme</a></li>
+                            <li><a class="videos" href="#portfolio">Videos</a></li>
+                        </ul>
+                    </nav>
                 </div>
                 
           <div class="grid row">
           
-          <div id="integration"><code>
+          <div class="integration tous"><code>
 					
 					<figure class="effect-apollo">
 						<img src="./img/int%C3%A9gration_services.png" alt="img18"/>
@@ -291,7 +296,7 @@
 					
                     </div></code>
                     
-                <div id="graphisme"><code>
+                <div class="graphisme tous"><code>
 					
 						
 					<figure class="effect-hera">
@@ -321,7 +326,7 @@
                     </div></code>  
                  
                  
-                  <div id="video"><code>
+                  <div class="video tous"><code>
 					
 						
 					<figure class="effect-hera">
@@ -350,41 +355,37 @@
 					
                     </div></code>  
                  </div>
-                 
-                 
-                 
 				
 				 </div>
                 
             
                 
             </section>
-            <section>
-                <form action="index.php?recherche=livre" method="post">
-	  <p>  <label>Nom</label>
-	    <input name="id_auteur" type="text"/></p>
-		<p><label>Prénom</label>
-	    <input name="id_editeur" type="text"/></p>
-		
-		<p><label>Votre adresse</label>
-	    <input name="titre" type="text"/></p>
-		
-	    <p class="description"><label>Description</label>	    
-	    <input name="description" type="text"/>	</p>
-		
-		<p><label>Date</label>	    
-	    <input name="date" type="date"/></p>
-	    <p><input type="submit" value="Envoyé"></p
-	</form>    
-
-            
+            <section id="contact">
                
+               <div class="row">
+               <div class="col3">
+                <form action="" method="post">
+                    <p class="nom">
+                        <input name="prenom" type="text" placeholder="Prénom"/>
+                        <input name="nom" type="text" placeholder="Nom"/>
+                    </p>
+
+                    <p class="adresse"><input name="adresse" type="text" placeholder="Votre adresse"/></p>
+
+                    <p class="message"><textarea name="message" type="text" placeholder="Votre message"></textarea>	</p>
+
+                    <input type="submit" value="Envoyé" class="envoyer">
+                </form>    
+                </div>
+            
+                </div>  
                 
                 
             </section>
         </main>
         <section class="espace"></section>
-<h1 id="contact">contact</h1>
+<h1 >contact</h1>
 
     </div>
     

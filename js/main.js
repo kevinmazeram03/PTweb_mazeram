@@ -68,38 +68,94 @@ $('.bar-percentage[data-percentage]').each(function () {
 jQuery(document).ready(function()
 {
    // On cache la zone de texte
-   jQuery('#graphisme').hide();
-    jQuery('#integration').hide();
-    jQuery('#video').hide();
+   jQuery('.graphisme').hide();
+    jQuery('.integration').hide();
+    jQuery('.video').hide();
   
     // toggle() lorsque le lien avec l'ID #toggler est cliqué
-   jQuery('a#graphismes').click(function()
+   jQuery('a.graphismes').click(function()
   {
-      jQuery('#integration').hide();
-       jQuery('#video').hide();
+      jQuery('.integration').hide();
+       jQuery('.video').hide();
        
-      jQuery('#graphisme').toggle(800);
+      jQuery('.graphisme').toggle(800);
       return false;
    });
     
-    jQuery('a#integrations').click(function()
+    jQuery('a.integrations').click(function()
   {
-        jQuery('#graphisme').hide();
+        jQuery('.graphisme').hide();
        
-        jQuery('#video').hide();
-      jQuery('#integration').toggle(800);
+        jQuery('.video').hide();
+      jQuery('.integration').toggle(800);
       return false;
    });
     
-    jQuery('a#videos').click(function()
+    jQuery('a.videos').click(function()
   {
-        jQuery('#graphisme').hide();
-        jQuery('#integration').hide();
-        
-      jQuery('#video').toggle(800);
+        jQuery('.graphisme').hide();
+        jQuery('.integration').hide();
+    
+      jQuery('.video').toggle(800);
       return false;
+   });
+    
+    jQuery('a.touss').click(function()
+  {
+       
+      jQuery('.tous').toggle(800);
+      
    });
      
 });
 
 
+/*Liens actif + fluidité du défilement au scroll*/
+
+$(window).load(function(){
+// Cache selectors
+var lastId,
+topMenu = $("#menu"),
+topMenuHeight = topMenu.outerHeight()-60,
+// All list items
+menuItems = topMenu.find("a"),
+// Anchors corresponding to menu items
+scrollItems = menuItems.map(function(){
+var item = $($(this).attr("href"));
+if (item.length) { return item; }
+});
+
+// Bind click handler to menu items
+// so we can get a fancy scroll animation
+menuItems.click(function(e){
+var href = $(this).attr("href"),
+offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+$('html, body').stop().animate({ 
+scrollTop: offsetTop
+}, 1000);
+e.preventDefault();
+});
+
+// Bind to scroll
+$(window).scroll(function(){
+// Get container scroll position
+var fromTop = $(this).scrollTop()+topMenuHeight;
+
+// Get id of current scroll item
+var cur = scrollItems.map(function(){
+if ($(this).offset().top < fromTop)
+return this;
+});
+// Get the id of the current element
+cur = cur[cur.length-1];
+var id = cur && cur.length ? cur[0].id : "";
+
+if (lastId !== id) {
+lastId = id;
+// Set/remove active class
+menuItems
+.parent().removeClass("active")
+.end().filter("[href=#"+id+"]").parent().addClass("active");
+} 
+});
+});//]]> 

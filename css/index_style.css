@@ -16,6 +16,7 @@ font-family: Century Gothic;
 }
 
 .wrapper {  
+
 }
 .col1, .col2,.col3,.col4,.col5,.col6{
     
@@ -28,6 +29,7 @@ font-family: Century Gothic;
 .slider {
 	width: 100%;
 	margin: auto;
+    
 	
 }
 
@@ -44,6 +46,7 @@ font-family: Century Gothic;
 	height: 100vh;
 	opacity: 0;
 	transition: opacity 3s linear;
+    
 }
 
 .slider-wrapper > .slide:first-child {
@@ -162,12 +165,20 @@ background-color: rgba(0, 0, 0, 0.5);
 #menu a:hover{
     color: #EC6400;
 }
-nav li:hover{
+#menu li:hover{
     border-bottom: 5px solid #EC6400;
     transition: all .4s ease-in-out;
     -moz-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
 }
+
+#menu li.active a {
+    color: #EC6400;
+}
+#menu li.active {
+    border-bottom: 5px solid  #EC6400;
+}
+
 .fixedMenu{
     position: fixed;
     top: 0;
@@ -343,6 +354,9 @@ nav li:hover{
 
 
 /*------------------QUALIFICATIONS------------------*/
+#qualification{
+    padding-bottom: 50px;
+}
 
 #qualification .titre{
     height: 300px;
@@ -526,20 +540,24 @@ nav li:hover{
    
 
 }
+#experience{
+    min-height: 100vh
+}
 #experience img{
-    padding: 70px 14% 0 14%;
+    padding: 90px 14% 0 14%;
     width: 300px;
     height: 190px;
 }
 #experience .descrip{
     text-align: center;
      width: 300px;
-    padding: 30px 14% 40px 14%;
+    padding: 40px 14% 40px 14%;
+    line-height: 1.2em;
 }
 #experience .date{
     text-align: center;
     width: 300px;
-    padding: 20px 14% 0 14%;
+    padding: 40px 14% 0 14%;
     font-style: italic;
 }
 
@@ -563,7 +581,8 @@ nav li:hover{
     border-bottom: solid white 1px;
     height: 200px;
 }
-#portfolio img{
+#portfolio{
+    height: 100vh;
     
 }
 
@@ -916,8 +935,85 @@ nav li:hover{
                 -webkit-transition-delay: 0.1s;
                 transition-delay: 0.1s;
             }
-            /*TABLETTE*/
+#portfolio li {
+    display: inline-block;
+    width: 120px;
+    text-shadow: 2px 2px 4px black;
+    font-size: 1.2em;
+}
 
+#portfolio nav{
+    margin-top: 60px;
+}
+#portfolio a {
+    text-decoration: none;
+    color: white;
+    transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+}
+#portfolio a:hover{
+    color: #EC6400;
+}
+
+
+/*------------------CONTACT------------------*/
+#contact{
+    background-image: url(../img/mailbox-84526_1280.jpg);
+    background-size: cover;
+    height: 100vh;
+    
+}
+
+
+#contact form{
+    padding: 30% 0 50px 0;
+    text-align: center;
+    
+}
+#contact .nom input{
+    margin: 1%;
+    width: 33%;
+    height: 25px;
+    border-radius: 2px;
+    border: solid 2px #fff;
+}
+#contact .adresse input{
+    margin: 15px;
+    width: 69%;
+    height: 25px;
+    border-radius: 2px;
+    border: solid 2px #fff;
+}
+#contact .message textarea{
+    margin: 15px;
+    width: 69%;
+    height: 200px;
+    border-radius: 2px;
+    border: solid 2px #fff;
+}
+#contact .envoyer{
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    font-size: 1.1em;
+    border: solid black 2px; 
+}
+
+#contact .envoyer:hover{
+    color: black;
+    background-color: #f48028;
+    font-size: 1.1em;
+    border: solid #f0502a 2px;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+
+
+
+            /*TABLETTE*/
 
             /*SMARTPHONE*/
 
@@ -926,5 +1022,4 @@ nav li:hover{
             }
 
 
-#toggle{height:auto;text-align:center}
-#toggle p{text-align:center;padding:0}
+
