@@ -972,6 +972,33 @@ background-color: rgba(0, 0, 0, 0.6);
     color: #EC6400;
 }
 
+.galerie{
+    
+    position: absolute ;
+    width : 90%;
+    height: 100vh;
+    padding: 5%;
+    background-color: black;
+    z-index: 99;
+}
+.galerie img{
+    margin: 0 auto;
+    position: absolute ;
+    width : 500px;
+    height: 500px;
+    z-index: 100;
+}
+.croix a{
+    color: white;
+    z-index: 101;
+    font-size: 50px;
+}
+.galerie i{
+    font-size: 3em;
+    color: white;
+    margin-left: 80%;
+}
+
 
 /*------------------CONTACT------------------*/
 #contact{
@@ -1006,7 +1033,7 @@ background-color: rgba(0, 0, 0, 0.6);
     width: 235px;
     height: 35px;
     border-radius: 5px;
-    border: solid 2px rgba(255, 0, 0, 0.8);
+    border: solid 2px rgba(0, 0, 0, 0.8);
     opacity: 0.8;
 }
 #contact .adresse input{
@@ -1014,7 +1041,7 @@ background-color: rgba(0, 0, 0, 0.6);
     width: 500px;
     height: 35px;
     border-radius: 5px;
-    border: solid 2px rgba(255, 0, 0, 0.8);
+    border: solid 2px rgba(0, 0, 0, 0.8);
     opacity: 0.8;
 }
 #contact .message textarea{
@@ -1022,7 +1049,7 @@ background-color: rgba(0, 0, 0, 0.6);
     width: 500px;
     height: 200px;
     border-radius: 5px;
-    border: solid 2px rgba(255, 0, 0, 0.8);
+    border: solid 2px rgba(0, 0, 0, 0.8);
     opacity: 0.8;
 }
 #contact .envoyer{
@@ -1031,7 +1058,7 @@ background-color: rgba(0, 0, 0, 0.6);
     height: 40px;
     font-size: 1.1em;
     border-radius: 5px;
-    border: solid 2px rgba(255, 0, 0, 0.8); 
+    border: solid 2px rgba(0, 0, 0, 0.8); 
     font-size: 1.1em;
 }
 
@@ -1076,13 +1103,97 @@ background-color: rgba(0, 0, 0, 0.6);
 }
 
 
-
+.menu-button {
+    display: none;
+}
 
 /*SMARTPHONE*/
+@media (max-width:1200px){
+ #accueil nav ul {
+        height: 0;
+        overflow: hidden;
+        transition: height 0.5s;
+    }
+     #accueil nav ul.open {
+        height: 18em;
+    }
 
-@media (max-width:900){
+     #accueil  .menu-button {
+        display: block;
+        color: white;
+    }
+    .menu-button{
+        color: white;
+        font-size: 1.8em;
+        height: 2em;
+        line-height: 2em;
+        color: black;
+        /*display: block;*/
+        text-align: right;
+        margin-right: 20px;
+        /*text-decoration: none;*/
+    }
+    nav li{
+        width: 100%;
+        background-color: rgba(0,0,0,0.5);
+        display: block;
+    }
+    
+    nav ul {
+    
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1em;    
+    }
+    #menu ul{
+        padding-right: 0px;
+    }
+}
 
+@media (min-width:421px) and (max-width:950px){
+   
 
+    
+    
+    #propos .profil img{
+        width: 250px;
+        margin-top: -50px;
+        
+    }
+   
+    .thumb {
+        width: 80%; height: 25vh;}
+    
+    #propos .servicesexpli p{
+        padding-top: 20px;
+        width: 80%; height: 25vh;
+    }
+    
+    #qualification .description2 p{
+    width: 200px;
+    height: 150px;
+    margin-left: 15%;
+    text-align: center;
+    margin-top: 120px
+    }
+    
+    #qualification .ligne{
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 850px;
+    background-color: black;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+#qualification .descriforma{
+    height: 1px;
+}
+    #qualification #container{
+        padding-left: 15%;
+    }
 }
 
 

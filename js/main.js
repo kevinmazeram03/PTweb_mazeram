@@ -1,4 +1,4 @@
-var leMenu = $('#menu');
+var leMenu = $('#menunu');
 var leBouton = $('#unfold');
 
 leBouton.click(function (evt) {
@@ -67,6 +67,7 @@ $('.bar-percentage[data-percentage]').each(function () {
 
 jQuery(document).ready(function()
 {
+     jQuery('.galerie').hide();
    // On cache la zone 
    // jQuery('.graphisme').hide();
   //  jQuery('.integration').hide();
@@ -111,7 +112,7 @@ jQuery(document).ready(function()
         jQuery('.autre').hide();
     
       jQuery('.webdesign').show(800);
-      return false;
+      
    });
     
     jQuery('a.touss').click(function()
@@ -119,6 +120,13 @@ jQuery(document).ready(function()
        
       jQuery('.tous').show(800);
       
+   });
+    
+     jQuery('a.galeries').click(function()
+  {
+       
+      jQuery('.galerie').toggle(800);
+      return false;
    });
      
 });
@@ -172,3 +180,6 @@ $(window).load(function(){
         } 
     });
 });//]]> 
+
+
+

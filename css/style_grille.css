@@ -45,7 +45,7 @@
 
 /*----------------------800px---------------------------------*/
 
-@media (min-width:421px) and (max-width:800px){
+@media (min-width:421px) and (max-width:950px){
  
     
 .col11{
@@ -74,13 +74,9 @@
 
 }
 /*----------------------420px---------------------------------*/
-@media (max-width:380){
+@media (max-width:420px){
 
-.col21, .col22,.col23,.col24,.col25,.col26{
-    float:left;
-   
-    
-}    
+  
 
 .col21{
     width:calc(100% / 6);
